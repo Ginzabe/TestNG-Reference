@@ -1,2 +1,2 @@
 # TestNG-Reference
-All about JAVA+TestNG+Selenium 
+All about JAVA+TestNG+Selenium with Maven
