@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<suite name="data driven login testing">
+
+<test name="validating positive data">
+
+<parameter name="userid" value="standard_user"></parameter>
+<parameter name="password" value="secret_sauce"></parameter>
+<parameter name="expectedvalue" value="https://www.saucedemo.com/inventory.html"></parameter>
+
+<classes> 
+<class name = "sauceDemoTest.Scripts.validateLoginData"></class>
+</classes>
+
+</test>
+
+
+<test name="validating negative data">
+
+<parameter name="userid" value="secret_socked_out_useauce"></parameter>
+<parameter name="password" value="secret_sauce"></parameter>
+<parameter name="expectedvalue" value="https://www.saucedemo.com/"></parameter>
+
+<classes> 
+<class name = "sauceDemoTest.Scripts.validateLoginData"></class>
+</classes>
+
+</test>
+
+<test name="validating problem user data">
+
+<parameter name="userid" value="problem_user"></parameter>
+<parameter name="password" value="secret_sauce"></parameter>
+<parameter name="expectedvalue" value="https://www.saucedemo.com/inventory.html"></parameter>
+
+<classes> 
+<class name = "sauceDemoTest.Scripts.validateLoginData"></class>
+</classes>
+
+</test>
+
+<test name="validating performance user data">
+
+<parameter name="userid" value="performance_glitch_user"></parameter>
+<parameter name="password" value="secret_sauce"></parameter>
+<parameter name="expectedvalue" value="https://www.saucedemo.com/inventory.html"></parameter>
+
+<classes> 
+<class name = "sauceDemoTest.Scripts.validateLoginData"></class>
+</classes>
+
+</test>
+
+
+
+
+
+
+
+</suite>

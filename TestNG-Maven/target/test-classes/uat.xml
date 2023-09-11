@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="regression testing" parallel="tests">
+
+<test name="regression testing 1">
+
+<classes>
+<class name = "sauceDemoTest.Scripts.validateLogin"></class>
+
+</classes>
+
+</test>
+
+
+<test name="regression testing 2">
+
+<classes>
+
+<class name = "sauceDemoTest.Scripts.valiadateLoginElements"></class>
+
+</classes>
+
+
+
+
+</test>
+
+
+
+</suite>

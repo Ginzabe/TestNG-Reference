@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="regression testing">
+
+<test name="regression testing">
+
+<classes>
+
+<class name = "sauceDemoTest.Scripts.validateLogin"></class>
+<class name = "sauceDemoTest.Scripts.valiadateLoginElements"></class>
+
+
+
+
+</classes>
+
+
+</test>
+
+
+
+
+</suite>

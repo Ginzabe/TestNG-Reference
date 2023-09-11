@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Need parallel testing for validatelogin and validateChart2" parallel="both">
+<test name="validation login testing ">
+
+<classes>
+<class name = "sauceDemoTest.Scripts.validateLogin"></class>
+
+</classes>
+</test>
+
+
+<test name="validation chart2 testing">
+
+<classes>
+
+<class name = "sauceDemoTest.Scripts.ValidatingChart2"></class>
+
+</classes>
+
+
+</test>
+
+</suite>
