@@ -2,6 +2,8 @@ package testScripts;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -14,12 +16,27 @@ public class HomePage {
 
 	    @BeforeTest
 	    public void setup() {
-	        System.setProperty("webdriver.chrome.driver",
+	    	
+	    String browser = "Edge";
+	    WebDriver driver;
+	    switch(browser.toUpperCase()) {
+	    case "Edge":
+	    	driver = new EdgeDriver();
+	    	break;
+	    case "FIREFOX":
+	    	driver = new FirefoxDriver();
+	    	break;
+	    default: 	
+	    	driver = new ChromeDriver();
+	    }
+	        /*System.setProperty("webdriver.chrome.driver",
 	                "C:\\Users\\sacon\\Desktop\\workspace\\3rd party libraies\\chromedriver.exe");
 	        driver = new ChromeDriver(); // Initialize WebDriver
+	        
+	        **/
 	        driver.get("https://ginzabe.com/");
+	   
 	    }
-
 	    @Test
 	    public void test() {
 	        // Your test logic goes here
@@ -29,7 +46,7 @@ public class HomePage {
 	    @AfterTest
 	    public void endTest() {
 	       
-	    	driver.quit();
+	    	driver.close();
 	        }
 	    }
 	
