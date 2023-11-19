@@ -48,4 +48,9 @@ public class Home {
 		return driver.findElement(By.xpath(
 				"//*[@id=\"content\"]/div/section[3]/div/div/div/div/div/div[1]/div[1]/div[1]/div/div[3]/div[1]/div[3]/div/a"));
 	}
+
+	public WebElement addToCart() {
+		return driver.findElement(By.xpath(
+				"//*[@id=\"content\"]/div/section[3]/div/div/div/div/div/div[1]/div[1]/div[1]/div/div[3]/div[2]/div/div[2]/a/span[2]"));
+	}
 }
