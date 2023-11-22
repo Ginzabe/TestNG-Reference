@@ -59,7 +59,7 @@ public class HomePageScript {
 
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 1, dependsOnMethods = {"careerPath"})
 	public void ownPace() {
 
 		hpg.ownPace().click();
@@ -69,8 +69,8 @@ public class HomePageScript {
 
 		assertEquals(actual, expected);
 	}
-
-	@Test(priority = 2)
+     
+	@Test(priority = 2, enabled = true) // enabled or disabled the test
 	public void payingJob() {
 
 		hpg.payingJob().click();

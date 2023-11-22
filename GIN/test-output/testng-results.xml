@@ -2,40 +2,40 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-22T18:30:10 EST" name="Default suite" finished-at="2023-11-22T18:30:42 EST" duration-ms="31897">
+  <suite started-at="2023-11-22T18:53:39 EST" name="Default suite" finished-at="2023-11-22T18:53:46 EST" duration-ms="7347">
     <groups>
     </groups>
-    <test started-at="2023-11-22T18:30:10 EST" name="Default test" finished-at="2023-11-22T18:30:42 EST" duration-ms="31897">
+    <test started-at="2023-11-22T18:53:39 EST" name="Default test" finished-at="2023-11-22T18:53:46 EST" duration-ms="7347">
       <class name="scripts.HomePageScript">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:scripts.HomePageScript@7526515b]" started-at="2023-11-22T18:30:10 EST" name="Setup" finished-at="2023-11-22T18:30:12 EST" duration-ms="1962" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:scripts.HomePageScript@54c5a2ff]" started-at="2023-11-22T18:53:39 EST" name="Setup" finished-at="2023-11-22T18:53:41 EST" duration-ms="2200" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method is-config="true" signature="Syncronization()[pri:0, instance:scripts.HomePageScript@7526515b]" started-at="2023-11-22T18:30:12 EST" name="Syncronization" finished-at="2023-11-22T18:30:14 EST" duration-ms="1745" status="PASS">
+        <test-method is-config="true" signature="Syncronization()[pri:0, instance:scripts.HomePageScript@54c5a2ff]" started-at="2023-11-22T18:53:41 EST" name="Syncronization" finished-at="2023-11-22T18:53:43 EST" duration-ms="1393" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Syncronization -->
-        <test-method signature="careerPath()[pri:0, instance:scripts.HomePageScript@7526515b]" started-at="2023-11-22T18:30:14 EST" name="careerPath" finished-at="2023-11-22T18:30:39 EST" duration-ms="24986" status="PASS">
+        <test-method signature="careerPath()[pri:0, instance:scripts.HomePageScript@54c5a2ff]" started-at="2023-11-22T18:53:43 EST" name="careerPath" finished-at="2023-11-22T18:53:44 EST" duration-ms="1090" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- careerPath -->
-        <test-method is-config="true" signature="Syncronization()[pri:0, instance:scripts.HomePageScript@7526515b]" started-at="2023-11-22T18:30:39 EST" name="Syncronization" finished-at="2023-11-22T18:30:39 EST" duration-ms="336" status="PASS">
+        <test-method is-config="true" signature="Syncronization()[pri:0, instance:scripts.HomePageScript@54c5a2ff]" started-at="2023-11-22T18:53:44 EST" name="Syncronization" finished-at="2023-11-22T18:53:44 EST" duration-ms="403" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Syncronization -->
-        <test-method signature="ownPace()[pri:1, instance:scripts.HomePageScript@7526515b]" started-at="2023-11-22T18:30:39 EST" name="ownPace" finished-at="2023-11-22T18:30:40 EST" duration-ms="871" status="PASS">
+        <test-method signature="ownPace()[pri:1, instance:scripts.HomePageScript@54c5a2ff]" started-at="2023-11-22T18:53:44 EST" name="ownPace" finished-at="2023-11-22T18:53:45 EST" depends-on-methods="scripts.HomePageScript.careerPath" duration-ms="783" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ownPace -->
-        <test-method is-config="true" signature="Syncronization()[pri:0, instance:scripts.HomePageScript@7526515b]" started-at="2023-11-22T18:30:40 EST" name="Syncronization" finished-at="2023-11-22T18:30:40 EST" duration-ms="379" status="PASS">
+        <test-method is-config="true" signature="Syncronization()[pri:0, instance:scripts.HomePageScript@54c5a2ff]" started-at="2023-11-22T18:53:45 EST" name="Syncronization" finished-at="2023-11-22T18:53:45 EST" duration-ms="354" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Syncronization -->
-        <test-method signature="payingJob()[pri:2, instance:scripts.HomePageScript@7526515b]" started-at="2023-11-22T18:30:40 EST" name="payingJob" finished-at="2023-11-22T18:30:42 EST" duration-ms="1191" status="PASS">
+        <test-method signature="payingJob()[pri:2, instance:scripts.HomePageScript@54c5a2ff]" started-at="2023-11-22T18:53:45 EST" name="payingJob" finished-at="2023-11-22T18:53:46 EST" duration-ms="785" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- payingJob -->
-        <test-method is-config="true" signature="TearOut()[pri:0, instance:scripts.HomePageScript@7526515b]" started-at="2023-11-22T18:30:42 EST" name="TearOut" finished-at="2023-11-22T18:30:42 EST" duration-ms="345" status="PASS">
+        <test-method is-config="true" signature="TearOut()[pri:0, instance:scripts.HomePageScript@54c5a2ff]" started-at="2023-11-22T18:53:46 EST" name="TearOut" finished-at="2023-11-22T18:53:46 EST" duration-ms="235" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearOut -->
