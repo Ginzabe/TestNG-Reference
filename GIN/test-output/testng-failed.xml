@@ -3,14 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testScripts.HomeP">
+      <class name="scripts.HomePageScript">
         <methods>
-          <include name="careerPath"/>
-          <include name="Syncronization"/>
           <include name="Setup"/>
           <include name="TearOut"/>
+          <include name="ownPace"/>
+          <include name="careerPath"/>
+          <include name="Syncronization"/>
         </methods>
-      </class> <!-- testScripts.HomeP -->
+      </class> <!-- scripts.HomePageScript -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
