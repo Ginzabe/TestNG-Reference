@@ -1,41 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="11" passed="10" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-22T18:53:39 EST" name="Default suite" finished-at="2023-11-22T18:53:46 EST" duration-ms="7347">
+  <suite started-at="2023-11-24T09:58:06 EST" name="Default suite" finished-at="2023-11-24T09:58:20 EST" duration-ms="13893">
     <groups>
     </groups>
-    <test started-at="2023-11-22T18:53:39 EST" name="Default test" finished-at="2023-11-22T18:53:46 EST" duration-ms="7347">
+    <test started-at="2023-11-24T09:58:06 EST" name="Default test" finished-at="2023-11-24T09:58:20 EST" duration-ms="13893">
       <class name="scripts.HomePageScript">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:scripts.HomePageScript@54c5a2ff]" started-at="2023-11-22T18:53:39 EST" name="Setup" finished-at="2023-11-22T18:53:41 EST" duration-ms="2200" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:scripts.HomePageScript@1530c739]" started-at="2023-11-24T09:58:06 EST" name="Setup" finished-at="2023-11-24T09:58:08 EST" duration-ms="2404" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method is-config="true" signature="Syncronization()[pri:0, instance:scripts.HomePageScript@54c5a2ff]" started-at="2023-11-22T18:53:41 EST" name="Syncronization" finished-at="2023-11-22T18:53:43 EST" duration-ms="1393" status="PASS">
+        <test-method is-config="true" signature="Syncronization()[pri:0, instance:scripts.HomePageScript@1530c739]" started-at="2023-11-24T09:58:08 EST" name="Syncronization" finished-at="2023-11-24T09:58:10 EST" duration-ms="1517" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Syncronization -->
-        <test-method signature="careerPath()[pri:0, instance:scripts.HomePageScript@54c5a2ff]" started-at="2023-11-22T18:53:43 EST" name="careerPath" finished-at="2023-11-22T18:53:44 EST" duration-ms="1090" status="PASS">
+        <test-method signature="addToCart()[pri:0, instance:scripts.HomePageScript@1530c739]" started-at="2023-11-24T09:58:10 EST" name="addToCart" finished-at="2023-11-24T09:58:11 EST" duration-ms="1205" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element is not clickable at point (145, 1130)
+  (Session info: chrome=119.0.6045.160)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c15610ccccc0ae7e1b8c3f4853640557, clickElement {id=43A9EA61B624FFC234446E9821FAC070_element_18}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\sacon\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59525}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59525/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c15610ccccc0ae7e1b8c3f4853640557)] -> xpath: //*[@id="content"]/div/section[3]/div/div/div/div/div/div[1]/div[1]/div[1]/div/div[3]/div[2]]
+Session ID: c15610ccccc0ae7e1b8c3f4853640557]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (145, 1130)
+  (Session info: chrome=119.0.6045.160)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c15610ccccc0ae7e1b8c3f4853640557, clickElement {id=43A9EA61B624FFC234446E9821FAC070_element_18}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\sacon\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59525}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59525/devtoo..., se:cdpVersion: 119.0.6045.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (c15610ccccc0ae7e1b8c3f4853640557)] -> xpath: //*[@id="content"]/div/section[3]/div/div/div/div/div/div[1]/div[1]/div[1]/div/div[3]/div[2]]
+Session ID: c15610ccccc0ae7e1b8c3f4853640557
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at scripts.HomePageScript.addToCart(HomePageScript.java:151)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCart -->
+        <test-method is-config="true" signature="Syncronization()[pri:0, instance:scripts.HomePageScript@1530c739]" started-at="2023-11-24T09:58:11 EST" name="Syncronization" finished-at="2023-11-24T09:58:11 EST" duration-ms="368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Syncronization -->
+        <test-method signature="browseCourse()[pri:0, instance:scripts.HomePageScript@1530c739]" started-at="2023-11-24T09:58:11 EST" name="browseCourse" finished-at="2023-11-24T09:58:12 EST" duration-ms="997" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browseCourse -->
+        <test-method is-config="true" signature="Syncronization()[pri:0, instance:scripts.HomePageScript@1530c739]" started-at="2023-11-24T09:58:12 EST" name="Syncronization" finished-at="2023-11-24T09:58:13 EST" duration-ms="340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Syncronization -->
+        <test-method signature="careerPath()[pri:0, instance:scripts.HomePageScript@1530c739]" started-at="2023-11-24T09:58:13 EST" name="careerPath" finished-at="2023-11-24T09:58:14 EST" duration-ms="1179" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- careerPath -->
-        <test-method is-config="true" signature="Syncronization()[pri:0, instance:scripts.HomePageScript@54c5a2ff]" started-at="2023-11-22T18:53:44 EST" name="Syncronization" finished-at="2023-11-22T18:53:44 EST" duration-ms="403" status="PASS">
+        <test-method is-config="true" signature="Syncronization()[pri:0, instance:scripts.HomePageScript@1530c739]" started-at="2023-11-24T09:58:14 EST" name="Syncronization" finished-at="2023-11-24T09:58:14 EST" duration-ms="405" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Syncronization -->
-        <test-method signature="ownPace()[pri:1, instance:scripts.HomePageScript@54c5a2ff]" started-at="2023-11-22T18:53:44 EST" name="ownPace" finished-at="2023-11-22T18:53:45 EST" depends-on-methods="scripts.HomePageScript.careerPath" duration-ms="783" status="PASS">
+        <test-method signature="courseOwner()[pri:0, instance:scripts.HomePageScript@1530c739]" started-at="2023-11-24T09:58:14 EST" name="courseOwner" finished-at="2023-11-24T09:58:14 EST" duration-ms="40" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- courseOwner -->
+        <test-method is-config="true" signature="Syncronization()[pri:0, instance:scripts.HomePageScript@1530c739]" started-at="2023-11-24T09:58:14 EST" name="Syncronization" finished-at="2023-11-24T09:58:15 EST" duration-ms="327" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Syncronization -->
+        <test-method signature="courseprice()[pri:0, instance:scripts.HomePageScript@1530c739]" started-at="2023-11-24T09:58:15 EST" name="courseprice" finished-at="2023-11-24T09:58:15 EST" duration-ms="46" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- courseprice -->
+        <test-method is-config="true" signature="Syncronization()[pri:0, instance:scripts.HomePageScript@1530c739]" started-at="2023-11-24T09:58:15 EST" name="Syncronization" finished-at="2023-11-24T09:58:15 EST" duration-ms="298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Syncronization -->
+        <test-method signature="displayCourseDuration()[pri:0, instance:scripts.HomePageScript@1530c739]" started-at="2023-11-24T09:58:15 EST" name="displayCourseDuration" finished-at="2023-11-24T09:58:15 EST" duration-ms="54" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- displayCourseDuration -->
+        <test-method is-config="true" signature="Syncronization()[pri:0, instance:scripts.HomePageScript@1530c739]" started-at="2023-11-24T09:58:15 EST" name="Syncronization" finished-at="2023-11-24T09:58:15 EST" duration-ms="289" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Syncronization -->
+        <test-method signature="displayCourseName()[pri:0, instance:scripts.HomePageScript@1530c739]" started-at="2023-11-24T09:58:15 EST" name="displayCourseName" finished-at="2023-11-24T09:58:15 EST" duration-ms="66" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- displayCourseName -->
+        <test-method is-config="true" signature="Syncronization()[pri:0, instance:scripts.HomePageScript@1530c739]" started-at="2023-11-24T09:58:15 EST" name="Syncronization" finished-at="2023-11-24T09:58:16 EST" duration-ms="364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Syncronization -->
+        <test-method signature="enrollNow()[pri:0, instance:scripts.HomePageScript@1530c739]" started-at="2023-11-24T09:58:16 EST" name="enrollNow" finished-at="2023-11-24T09:58:16 EST" duration-ms="477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enrollNow -->
+        <test-method is-config="true" signature="Syncronization()[pri:0, instance:scripts.HomePageScript@1530c739]" started-at="2023-11-24T09:58:16 EST" name="Syncronization" finished-at="2023-11-24T09:58:17 EST" duration-ms="393" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Syncronization -->
+        <test-method signature="numberOfCourseSubscribers()[pri:0, instance:scripts.HomePageScript@1530c739]" started-at="2023-11-24T09:58:17 EST" name="numberOfCourseSubscribers" finished-at="2023-11-24T09:58:17 EST" duration-ms="53" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- numberOfCourseSubscribers -->
+        <test-method is-config="true" signature="Syncronization()[pri:0, instance:scripts.HomePageScript@1530c739]" started-at="2023-11-24T09:58:17 EST" name="Syncronization" finished-at="2023-11-24T09:58:17 EST" duration-ms="320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Syncronization -->
+        <test-method signature="ownPace()[pri:1, instance:scripts.HomePageScript@1530c739]" started-at="2023-11-24T09:58:17 EST" name="ownPace" finished-at="2023-11-24T09:58:18 EST" depends-on-methods="scripts.HomePageScript.careerPath" duration-ms="863" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ownPace -->
-        <test-method is-config="true" signature="Syncronization()[pri:0, instance:scripts.HomePageScript@54c5a2ff]" started-at="2023-11-22T18:53:45 EST" name="Syncronization" finished-at="2023-11-22T18:53:45 EST" duration-ms="354" status="PASS">
+        <test-method is-config="true" signature="Syncronization()[pri:0, instance:scripts.HomePageScript@1530c739]" started-at="2023-11-24T09:58:18 EST" name="Syncronization" finished-at="2023-11-24T09:58:18 EST" duration-ms="322" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Syncronization -->
-        <test-method signature="payingJob()[pri:2, instance:scripts.HomePageScript@54c5a2ff]" started-at="2023-11-22T18:53:45 EST" name="payingJob" finished-at="2023-11-22T18:53:46 EST" duration-ms="785" status="PASS">
+        <test-method signature="payingJob()[pri:2, instance:scripts.HomePageScript@1530c739]" started-at="2023-11-24T09:58:18 EST" name="payingJob" finished-at="2023-11-24T09:58:19 EST" duration-ms="1045" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- payingJob -->
-        <test-method is-config="true" signature="TearOut()[pri:0, instance:scripts.HomePageScript@54c5a2ff]" started-at="2023-11-22T18:53:46 EST" name="TearOut" finished-at="2023-11-22T18:53:46 EST" duration-ms="235" status="PASS">
+        <test-method is-config="true" signature="TearOut()[pri:0, instance:scripts.HomePageScript@1530c739]" started-at="2023-11-24T09:58:19 EST" name="TearOut" finished-at="2023-11-24T09:58:20 EST" duration-ms="410" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearOut -->

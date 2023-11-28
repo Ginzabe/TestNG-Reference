@@ -47,7 +47,7 @@ public class HomePageScript {
 
 	}
 
-	@Test(priority = 0)
+	@Test(priority = 0) // tests are prioritized by numbers always start with 0
 	public void careerPath() {
 
 		hpg.careerPath().click();
@@ -59,7 +59,7 @@ public class HomePageScript {
 
 	}
 
-	@Test(priority = 1, dependsOnMethods = {"careerPath"})
+	@Test(priority = 1, dependsOnMethods = {"careerPath"}) // To show one test depends on another test
 	public void ownPace() {
 
 		hpg.ownPace().click();
@@ -70,7 +70,7 @@ public class HomePageScript {
 		assertEquals(actual, expected);
 	}
      
-	@Test(priority = 2, enabled = true) // enabled or disabled the test
+	@Test(priority = 2, enabled = true) // enabled or disabled the test use = true/false
 	public void payingJob() {
 
 		hpg.payingJob().click();
@@ -81,7 +81,81 @@ public class HomePageScript {
 		assertEquals(actual, expected);
 
 	}
+	
+	@Test (enabled = true)
+	public void enrollNow() {
+		hpg.enrollNow().click();
+		
+		String expected = "https://ginzabe.com/dashboard/";
+		String actual = driver.getCurrentUrl();
+		
+		assertEquals(actual, expected);
+	}
 
+	@Test
+	public void browseCourse() {
+		
+		hpg.browseCourse().click();
+		
+	String expected = "https://ginzabe.com/course-list/";
+	String actual = driver.getCurrentUrl();
+		
+		assertEquals(actual, expected);
+	}
+	
+	@Test
+	public void displayCourseName() {
+	
+		String actual = hpg.displayCourseName().getText();
+		String expected = "Be Quality Analyst";
+				
+		assertEquals(actual, expected);
+		
+	}
+	
+	@Test
+	public void displayCourseDuration() {
+		
+		String actual = hpg.displayCourseDuration().getText();
+		String expected = "24 hours";
+		
+		assertEquals(actual, expected);
+	}
+	
+	@Test
+	public void numberOfCourseSubscribers() {
+		String actual = hpg.numberOfCourseSubscribers().getText();
+		String expected = "3";
+		
+		assertEquals(actual, expected);
+	}
+	
+	@Test 
+	public void courseOwner() {
+		String actual = hpg.courseOwner().getText();
+		String expected = "ginzabe";
+		
+		assertEquals(actual, expected);
+	}
+	
+	@Test 
+	public void courseprice() {
+		String actual = hpg.courseprice().getText();
+		String expected = "$1,999.99";
+		
+		assertEquals(actual, expected);
+	}
+	
+	@Test
+	public void addToCart() {
+		hpg.addToCart().click();
+		
+		String actual = driver.getCurrentUrl();
+		String expected = "https://ginzabe.com/dashboard/";
+		
+		assertEquals(actual, expected);
+	}
+	
 	@AfterTest
 	public void TearOut() {
 

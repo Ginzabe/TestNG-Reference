@@ -5,10 +5,9 @@
     <classes>
       <class name="scripts.HomePageScript">
         <methods>
+          <include name="addToCart"/>
           <include name="Setup"/>
           <include name="TearOut"/>
-          <include name="ownPace"/>
-          <include name="careerPath"/>
           <include name="Syncronization"/>
         </methods>
       </class> <!-- scripts.HomePageScript -->

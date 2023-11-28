@@ -9,15 +9,14 @@ public class HomePage {
 	// declare the variable
 
 	WebDriver driver;
-	
 
 	// Constructor
 
-	public HomePage (WebDriver driver) {
-				this.driver = driver;
+	public HomePage(WebDriver driver) {
+		this.driver = driver;
 
-			}
-	
+	}
+
 	// home main functional elements
 
 	public WebElement careerPath() {
@@ -72,8 +71,8 @@ public class HomePage {
 	}
 
 	public WebElement addToCart() {
-		return driver.findElement(By.xpath(
-				"//*[@id=\"content\"]/div/section[3]/div/div/div/div/div/div[1]/div[1]/div[1]/div/div[3]/div[2]/div/div[2]/a/span[2]"));
+		
+		return driver.findElement(By.xpath(""));
 	}
 
 	public WebElement testimonyName1() {
